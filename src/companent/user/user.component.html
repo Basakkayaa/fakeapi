@@ -1,0 +1,22 @@
+<div class="container bg-secondary">
+    <div class="table-responsive bg-secondary">
+        <table class="table bg-secondary">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users">
+                    <td>{{user.id}}</td>
+                    <td>{{user.firstName}}</td>
+                    <td>{{user.lastName}}</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</div>

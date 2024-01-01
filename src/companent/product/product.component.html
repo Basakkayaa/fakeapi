@@ -1,0 +1,82 @@
+<div class="table-responsive">
+    <table class="table bg-body-secondary">
+        <div class="container">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">DiscountPercentage</th>
+                    <th scope="col">Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products">
+                    <td>{{product.id}}</td>
+                    <td>{{product.title}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.discountPercentage}}</td>
+                    <td>{{product.rating}}</td>
+                </tr>
+            </tbody>
+        </div>
+        <br>
+        <div class="container">
+            <thead>
+                <tr>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Brand</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Thumbnail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products">
+                    <td>{{product.stock}}</td>
+                    <td>{{product.brand}}</td>
+                    <td>{{product.category}}</td>
+                    <td>{{product.thumbnail}}</td>
+                </tr>
+            </tbody>
+        </div>
+        <br>
+
+        <div class="container-md">
+            <thead border="1px solid">
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">images</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products">
+                    <td>{{product.id}}</td>
+                    <td>{{product.images}}</td>
+                </tr>
+            </tbody>
+        </div>
+    </table>
+</div>
+
+
+<div class="container">
+    <div class=" row col-4">
+        <div class=" card text-start">
+            <div class="card-body" *ngFor="let product of products">
+                <span>{{product.id}}</span>
+                <img src="{{product.images}}" class="img-fluid rounded-top w-25" alt="" />
+                <h4 class="card-title">{{product.title}}</h4>
+                <p class="card-text">Price:{{product.price}}</p>
+                <p class="card-text">discountPercentage:{{product.discountPercentage}}</p>
+                <p class="card-text">rating:{{product.rating}}</p>
+                <p class="card-text">stock:{{product.stock}}</p>
+                <p class="card-text">brand:{{product.brand}}</p>
+                <p class="card-text">category:{{product.category}}</p>
+                <p class="card-text">thumbnail:{{product.thumbnail}}</p>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

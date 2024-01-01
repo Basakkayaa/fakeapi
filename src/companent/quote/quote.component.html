@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="table-responsive">
+        <table class="table bg-body-secondary">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Quote</th>
+                    <th scope="col">Author</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let  quote of quotes">
+                    <td>{{quote.id}}</td>
+                    <td>{{quote.quote}}</td>
+                    <td>{{quote.author}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
